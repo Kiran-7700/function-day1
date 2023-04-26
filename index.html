@@ -62,7 +62,7 @@
             girl ();"
          </fieldset>
          <pre>
-            <h3 style="display: inline;">Answer</h3> :   undefined
+            <h3 style="display: inline;">Answer</h3> :   undefined,because the console.log() statement is before the initialization var x=20;
            
          </pre>
 
@@ -78,8 +78,11 @@
 
          </fieldset>
          <pre>
-            <h3 style="display: inline;">Answer</h3>: 1st console=21 
-                     2nd console=undefined
+            <h3 style="display: inline;">Answer</h3>: 1st console=undefined
+                     2nd console=21
+                     <br>
+                     In the first line the girl(); function will print undefined because in the girl() function console.log() statement is before the initialization var x=20; <br> and in the second line 21 will be printed as after the function call there is a console.log() statement which prints x whose value is var x=21;
+</pre><br>
          </pre>
 
          <fieldset>
@@ -106,6 +109,8 @@
             <h3 style="display: inline;">Answer</h3>
             1st console=20;
             2nd console=40;
+            <br>
+            In the first line  20 is printed as the value of variable x in the function a() is 20 and in the second line 40 is printed as the value <br> of variable x in function b() is 40
          </pre>
 
 
@@ -144,8 +149,9 @@
           DisplayData(""PrepBytes"", FindSum(10, 9));"
        </fieldset>
        <pre>
-         <h3 style="display: inline;">Answer :</h3>   i am from PrepBytes and My batch is EA19
-       
+         <h3 style="display: inline;">Answer :</h3>   i am from PrepBytes and My batch is EA19 <br>
+         In this case the DisplayData function has two parameters data and batch and when the DisplayData function is called the first value is a string "PrepBytes" <br> and the other is a function FindSum which will return sum of 2 values passed to the function ,therefore when we console.log() the data is a string and  <br> batch is the value returned from the FindSum() function
+         
        </pre>
 
        <fieldset>
@@ -159,7 +165,9 @@
           }"
        </fieldset>
        <pre>
-         <h3 style="display: inline;">Answer :</h3>  undefined
+         <h3 style="display: inline;">Answer :</h3>  undefined <br>
+         ReferenceError as the function cannot be accessed before initialization
+         In this case the function Abc() is accessed before its initialization tgherefore it will give an referenceerror
        </pre>
 
       <fieldset>
@@ -173,7 +181,7 @@
          })();"
       </fieldset>
       <pre>
-         <h3 style="display: inline;">Answer :</h3>  undefined
+         <h3 style="display: inline;">Answer :</h3>  undefined,because the variable is printed before assigning any value to it
       </pre>
 
       <fieldset>
